@@ -14,9 +14,9 @@ Having extra examples and resources scattered among the different discord channe
 Anyone is welcome to add their resources to this repo.  All creators are credited in the readme file associated with their contribution. Right now it's just lazily curated by me (DMeville)
 
 
-# Table of Contents
 This should probably be turned into a wiki at some point.
-## Shader Graphs
+
+# Shader Graphs
 ------
 
 ### [Stylized Procedural Skybox](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/StylizedProceduralSkybox) - by [DMeville](https://twitter.com/dmeville)
@@ -30,7 +30,7 @@ Includes Shader Function: RotateCubemap2D
 ### [Snow Sparkles](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/SnowSparkles) - by [DMeville](https://twitter.com/dmeville)
 ![Snow Sparkles](https://i.imgur.com/l0WXSuj.gif)
 
-## Shader Functions
+# Shader Functions
 -------
 
 ### [Polar Coordinates](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/PolarCoordinates) - by [Andrew Mendlik](https://twitter.com/andrew_mendlik)
@@ -56,7 +56,7 @@ Includes Shader Function: RotateCubemap2D
 ### [Hue Shift](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/HueShift) - by [DMeville](https://twitter.com/dmeville)
 ![img](https://i.imgur.com/hJAIqcQ.gif)
 
-## Nodes
+# Nodes
 -------
 ### [Note Node](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/CommunityNodes/NoteNode) - by [DMeville](https://twitter.com/dmeville)
 ![Note Node](https://i.imgur.com/CanEU7S.png)
