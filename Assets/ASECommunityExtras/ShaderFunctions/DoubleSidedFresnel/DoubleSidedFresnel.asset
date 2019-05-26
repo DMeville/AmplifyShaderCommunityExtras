@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: DoubleSidedFresnel
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16301\n1921;1;1918;1026;1359.343;504.1519;1;True;True\nNode;AmplifyShaderEditor.FresnelNode;1;-318.377,-96.97663;Float;True;Standard;TangentNormal;ViewDir;True;5;0;FLOAT3;0,0,0;False;4;FLOAT3;0,0,0;False;1;FLOAT;0;False;2;FLOAT;1;False;3;FLOAT;5;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;4;-932.0966,216.115;Float;False;Power;1;3;False;1;0;FLOAT;5;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;10;-759.3428,-146.1519;Float;False;Normal;5;0;False;1;0;COLOR;0,0,1,0;False;1;COLOR;0\nNode;AmplifyShaderEditor.FunctionInput;7;-838.0966,-38.88499;Float;False;Bias;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FaceVariableNode;2;-828.3648,376.1523;Float;False;0;1;FLOAT;0\nNode;AmplifyShaderEditor.LerpOp;3;-580.3649,200.1524;Float;False;3;0;FLOAT;-5;False;1;FLOAT;5;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-842.0966,52.115;Float;False;Scale;1;2;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;5;-743.0966,165.115;Float;False;2;2;0;FLOAT;-1;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;89.7,-66.29999;Float;False;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;1;0;10;0\nWireConnection;1;1;7;0\nWireConnection;1;2;6;0\nWireConnection;1;3;3;0\nWireConnection;3;0;5;0\nWireConnection;3;1;4;0\nWireConnection;3;2;2;0\nWireConnection;5;1;4;0\nWireConnection;0;0;1;0\nASEEND*/\n//CHKSM=94ED5C951E54C88BD466919CA67E254BC5FB5BBC"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 11
+  m_customNodeCategory: 
+  m_previewPosition: 0

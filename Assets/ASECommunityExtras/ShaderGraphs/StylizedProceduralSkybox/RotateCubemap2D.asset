@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: RotateCubemap2D
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n2264;81;1166;829;2174.62;1071.374;2.381169;True;False\nNode;AmplifyShaderEditor.SinOpNode;9;-377.9448,-240.939;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;28;-1238.924,-378.0439;Float;False;Rotation
+    X;1;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;8;-704.3361,-385.8149;Float;False;FLOAT2;1;0;FLOAT2;0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.RadiansOpNode;7;-868.5724,-388.2198;Float;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.VertexToFragmentNode;27;1134.455,-369.665;Float;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;26;914.5181,-376.494;Float;True;2;2;0;FLOAT3x3;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NormalizeNode;25;640.9571,-89.46899;Float;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;24;682.2452,-368.145;Float;False;2;2;0;FLOAT3x3;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3x3;0,0,0,0,0,1,0,0,0,0,1,0,0,0,0,1;False;1;FLOAT3x3;0\nNode;AmplifyShaderEditor.WorldPosInputsNode;23;385.4122,-42.51306;Float;False;0;4;FLOAT3;0;FLOAT;1;FLOAT;2;FLOAT;3\nNode;AmplifyShaderEditor.MatrixFromVectors;22;361.4171,-205.085;Float;False;FLOAT3x3;True;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3x3;0\nNode;AmplifyShaderEditor.FunctionInput;29;-1231.924,-299.0439;Float;False;Rotation
+    Y;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.MatrixFromVectors;21;363.428,-383.193;Float;False;FLOAT3x3;True;4;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT3;0,0,0;False;1;FLOAT3x3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;19;7.242253,-154.689;Float;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;18;5.82404,-269.645;Float;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;17;-2.051936,216.5753;Float;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;16;7.597234,-397.225;Float;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;15;-0.8439283,-19.05603;Float;False;FLOAT3;4;0;FLOAT;1;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.NegateNode;14;-227.4599,-294.3361;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CosOpNode;13;-212.2568,-380.884;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CosOpNode;12;-191.8669,109.8782;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NegateNode;11;-202.9409,195.3102;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SinOpNode;10;-365.895,249.1001;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;20;-0.2887526,98.35742;Float;False;FLOAT3;4;0;FLOAT;0;False;1;FLOAT;1;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;32;-1023.924,-386.0439;Float;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;1462.583,-379.1027;Float;False;True;UV;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nWireConnection;9;0;8;0\nWireConnection;8;0;7;0\nWireConnection;7;0;32;0\nWireConnection;27;0;26;0\nWireConnection;26;0;24;0\nWireConnection;26;1;25;0\nWireConnection;25;0;23;0\nWireConnection;24;0;21;0\nWireConnection;24;1;22;0\nWireConnection;22;0;15;0\nWireConnection;22;1;20;0\nWireConnection;22;2;17;0\nWireConnection;21;0;16;0\nWireConnection;21;1;18;0\nWireConnection;21;2;19;0\nWireConnection;19;0;9;0\nWireConnection;19;2;13;0\nWireConnection;17;1;10;0\nWireConnection;17;2;12;0\nWireConnection;16;0;13;0\nWireConnection;16;2;14;0\nWireConnection;14;0;9;0\nWireConnection;13;0;8;0\nWireConnection;12;0;8;1\nWireConnection;11;0;10;0\nWireConnection;10;0;8;1\nWireConnection;20;1;12;0\nWireConnection;20;2;11;0\nWireConnection;32;0;28;0\nWireConnection;32;1;29;0\nWireConnection;0;0;27;0\nASEEND*/\n//CHKSM=05D4E91438267BE6F2FE0A61B59930A6411A992B"
+  m_functionName: 
+  m_description: 'Rotates a cubemap once around X and then around Y. Is done in vert
+
+
+    Useful for rotating star cubemaps.'
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

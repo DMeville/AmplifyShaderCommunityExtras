@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: GradientNoise
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n-1924;-1901;1918;1016;1599.15;1749.636;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;3;-807.9797,-1102.99;Float;False;Scale;1;1;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;52;-601.7247,-1505.51;Float;False;p
+    = p % 289@$float x = (34 * p.x + 1) * p.x % 289 + p.y@$x = (34 * x + 1) * x %
+    289@$x = frac(x / 41) * 2 - 1@$return normalize(float2(x - floor(x + 0.5), abs(x)
+    - 0.5))@;2;False;1;True;p;FLOAT2;0,0;In;;Float;False;unity_gradientNoise_dir;False;True;0;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;53;-590.9377,-1435.323;Float;False;float2
+    ip = floor(p)@$float2 fp = frac(p)@$float d00 = dot(unity_gradientNoise_dir(ip),
+    fp)@$float d01 = dot(unity_gradientNoise_dir(ip + float2(0, 1)), fp - float2(0,
+    1))@$float d10 = dot(unity_gradientNoise_dir(ip + float2(1, 0)), fp - float2(1,
+    0))@$float d11 = dot(unity_gradientNoise_dir(ip + float2(1, 1)), fp - float2(1,
+    1))@$fp = fp * fp * fp * (fp * (fp * 6 - 15) + 10)@$return lerp(lerp(d00, d01,
+    fp.y), lerp(d10, d11, fp.y), fp.x)@;1;False;1;True;p;FLOAT2;0,0;In;;Float;False;unity_gradientNoise;False;True;0;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;54;-593.5405,-1308.169;Float;False;return
+    unity_gradientNoise(UV * Scale) + 0.5@;1;False;2;True;UV;FLOAT2;0,0;In;;Float;False;True;Scale;FLOAT;0;In;;Float;False;Unity_GradientNoise_float;True;False;2;52;53;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-808.9797,-1352.99;Float;True;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;-321.7635,-1315.933;Float;True;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;54;0;2;0\nWireConnection;54;1;3;0\nWireConnection;0;0;54;0\nASEEND*/\n//CHKSM=371CABABBC16F0EF0613746F2F8F92F5C9EFF143"
+  m_functionName: 
+  m_description: 
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

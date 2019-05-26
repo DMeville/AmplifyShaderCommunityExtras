@@ -1,0 +1,69 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: SnowSparkle
+  m_Shader: {fileID: 4800000, guid: 1d8e8f4824abbda4f8f29eae57b46adb, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _Albedo:
+        m_Texture: {fileID: 2800000, guid: 4112a019314dad94f9ffc2f8481f31bc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normals:
+        m_Texture: {fileID: 2800000, guid: 24e31ecbf813d9e49bf7a1e0d4034916, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Sparkle:
+        m_Texture: {fileID: 2800000, guid: 8d7ad3e5fa929b640b6b80438a2a3c40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _SparkleNoise:
+        m_Texture: {fileID: 2800000, guid: 8d7ad3e5fa929b640b6b80438a2a3c40, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopTexture0:
+        m_Texture: {fileID: 2800000, guid: 8289022b0008a6b43936f73630a6d973, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Coverage: 0
+    - _Exp: 0
+    - _Falloff: 5.85
+    - _Float0: 24.97
+    - _ScreenSpaceUVTiling: 0
+    - _SparkleCutoff: 0.7
+    - _SparkleScale: 1
+    - _SparkleTiling: 0.92
+    - _SparklesIntensity: 5.7
+    - _StaticUVTiling: 0
+    - _Tiling: 2
+    - _TriplanarFalloff: 0
+    - _TriplanarUVTiling: 7.06
+    - __dirty: 0
+    m_Colors:
+    - _Color: {r: 0, g: 0, b: 0, a: 0}
+    - _Color0: {r: 0, g: 0, b: 0, a: 0}
+    - _FresnelBiasScalePower: {r: 0, g: 9.55, b: 3.34, a: 0}
+    - _FresnelColor: {r: 0.8254717, g: 0.9608202, b: 1, a: 0}
+    - _FresnelSettings: {r: 1, g: 1, b: 3.94, a: 0}
+    - _SnowDirection: {r: 0, g: 1, b: 0, a: 0}
+    - _Step: {r: 0.14, g: 0.29, b: 0.18, a: 0}
+    - _Tint: {r: 1, g: 1, b: 1, a: 0}

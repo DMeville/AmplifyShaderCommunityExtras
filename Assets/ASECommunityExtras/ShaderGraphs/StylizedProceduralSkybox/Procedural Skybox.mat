@@ -1,0 +1,145 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Procedural Skybox
+  m_Shader: {fileID: 4800000, guid: 79db2608e9015ae45833d9e5051ba08d, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _StarSkyCubemap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Stars:
+        m_Texture: {fileID: 2800000, guid: 8289022b0008a6b43936f73630a6d973, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _StarsCubemap:
+        m_Texture: {fileID: 8900000, guid: 77520064aae579b48aa2e3d446f8c536, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Texture0:
+        m_Texture: {fileID: 2800000, guid: 713efc49b75fdd1498ec0d64c7f5836e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample0:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TopTexture0:
+        m_Texture: {fileID: 2800000, guid: 5325ff5bb6aa46c458ce9291af1cdf9e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _tex3coord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _texcoord:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _Cloud2Thickness: -0.167
+    - _CloudHeight: 7.7
+    - _CloudSpeedLayer1: 0.15
+    - _CloudSpeedLayer2: 0.05
+    - _CloudThickness: 0.377
+    - _CloudTilingLayer1: 0.49
+    - _CloudTilingLayer2: 1.2
+    - _Float11: -1
+    - _Float12: 0
+    - _Float13: 1
+    - _Float26: -1
+    - _Float27: 0
+    - _Float3: 0.9933199
+    - _Float4: 13.25
+    - _Float5: 1.19
+    - _FogFill: 0
+    - _FogHeight: 0.624
+    - _FogSmoothness: 0.122
+    - _GalaxyItensity: 1
+    - _GlobalCloudSpeed: 0.075
+    - _HideHorizonGlowScale: 0.3
+    - _HorizonGlowIntensity: 3.09
+    - _HorizonMinAmount: 0.61
+    - _HorizonMinAmountAlways: 0.238
+    - _HorizonOffset: 1
+    - _HorizonScale: 0
+    - _HorizonSharpness: 12.64
+    - _HorizonSunGlowSharpness: 0.96
+    - _HorizonSunGlowSpread: 0.78
+    - _HorizonSunGlowSpreadMax: 2.52
+    - _HorizonSunGlowSpreadMin: 0
+    - _HorizonSunIntensity: 0.71
+    - _HorizonTintSunPower: 3
+    - _Lerp: 1
+    - _NightTransitionHorizionOffset: -1.4
+    - _NightTransitionHorizonDelay: -4.77
+    - _NightTransitionScale: 7.84
+    - _Rotation: 131
+    - _RotationSpeed: 0
+    - _RotationX: 1
+    - _RotationXSpeed: 0
+    - _SkyGradientPower: 2.76
+    - _SkyGradientScale: 1
+    - _StarLayer1Intensity: 1
+    - _StarLayer2Intensity: 1
+    - _StarLayer3Intensity: 1
+    - _StarsLayer: 3
+    - _StarsSize: 12.7
+    - _SunDiskGlowIntensity: 0.541
+    - _SunDiskGlowSharpness: 0.774
+    - _SunDiskGlowSize: 0.132
+    - _SunDiskGlowSizeAdjust: 0
+    - _SunDiskScale: 1
+    - _SunDiskSharpness: 0.0093
+    - _SunDiskSharpnessSmallAdjust: 0
+    - _SunDiskSize: 0
+    - _SunDiskSizeAdjust: 0.00299
+    - _SunGlowIntensity: 1
+    - _SunGlowScale: 75
+    - _SunGlowSharpness: 121.97
+    - _SunGlowSize: 0
+    - _SunHorizonGlowSharpness: 0.814
+    - _SunHorizonGlowSharpnessAdjust: 0
+    - _SunHorizonGlowSize: 0.087
+    - _SunHorizonGlowSizeAdjust: 0
+    - _SunHorizonRadiusA: 1.35
+    - _SunHorizonRaduisB: 1.38
+    - _SunIntensity: 1.09
+    - _SunRadiusA: 1.81
+    - _SunRaduisB: 1.49
+    - _UseGalaxyBackground: 0
+    - __dirty: 0
+    m_Colors:
+    - _CloudColor: {r: 1, g: 1, b: 1, a: 0}
+    - _HorizonColor: {r: 1, g: 0.42745054, b: 0.4396673, a: 1}
+    - _NightColor: {r: 0, g: 0, b: 0.10377359, a: 0}
+    - _NightColorBottom: {r: 0.033021122, g: 0.004004983, b: 0.16981116, a: 0}
+    - _NightColorTop: {r: 0, g: 0, b: 0, a: 0}
+    - _SkyColor: {r: 0.120013885, g: 0.3730585, b: 0.8207547, a: 1}
+    - _SkyColorBottom: {r: 0.27830172, g: 0.8399825, b: 1, a: 1}
+    - _SkyColorTop: {r: 0.12001369, g: 0.37305832, b: 0.8207547, a: 1}
+    - _SmoothstepMinMax: {r: 0.59, g: 0.73, b: 0, a: 0}
+    - _SmoothstepMinMax2: {r: 0, g: 1, b: 0, a: 0}
+    - _StarLayersIntensity: {r: 1, g: 0.9, b: 0.76, a: 0}
+    - _StarRotation: {r: 99, g: 184.43, b: 0, a: 0}
+    - _StarRotationSpeed: {r: 1, g: 1, b: 0, a: 0}
+    - _StarSize: {r: 7.6, g: 10, b: 40.6, a: 0}
+    - _StarsScroll: {r: 0.00001, g: 1.11, b: 0.00001, a: 0}
+    - _SunGlowSize: {r: 185.8, g: 1.01, b: 0.22, a: 0}
+    - _TilingFalloff: {r: 0.00001, g: 1, b: 0, a: 0}
+    - _Vector0: {r: 0, g: 0.94, b: 0.94, a: 0}
