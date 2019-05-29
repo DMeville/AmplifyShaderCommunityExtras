@@ -33,8 +33,7 @@ Includes Shader Function: RotateCubemap2D
 # Shader Functions
 -------
 
-### [Polar Coordinates](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/2DGlitch
-) - by [The C.reator](https://twitter.com/cayou66)
+### [2D Glitch](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/2DGlitch) - by [The C.reator](https://twitter.com/cayou66)
 ![2D Glitch](https://i.imgur.com/PobIGdH.gif)
 ------
 
