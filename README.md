@@ -20,7 +20,7 @@ This should probably be turned into a wiki at some point.
 ------
 
 ### [Stylized Procedural Skybox](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/StylizedProceduralSkybox) - by [DMeville](https://twitter.com/dmeville)
-Video: https://youtu.be/MIqhqy3soOU
+Video: https://youtu.be/VT9uNvUh_XU (with new clouds)
 ![Stylized Skybox](https://i.imgur.com/H0Xsu8J.gif)
 
 Includes Shader Function: RotateCubemap2D
