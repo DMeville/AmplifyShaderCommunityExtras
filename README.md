@@ -33,6 +33,10 @@ Includes Shader Function: RotateCubemap2D
 # Shader Functions
 -------
 
+### [JinToon](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/JinToon) - by [jinseiisla](https://twitter.com/jinseiisla)
+![img](https://i.imgur.com/dFwD2u3.png)
+------
+
 ### [2D Glitch](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/2DGlitch) - by [The C.reator](https://twitter.com/cayou66)
 ![2D Glitch](https://i.imgur.com/PobIGdH.gif)
 ------
