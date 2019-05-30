@@ -9,7 +9,7 @@ Material:
   m_PrefabAsset: {fileID: 0}
   m_Name: Procedural Skybox
   m_Shader: {fileID: 4800000, guid: 79db2608e9015ae45833d9e5051ba08d, type: 3}
-  m_ShaderKeywords: 
+  m_ShaderKeywords: _USERADIALCOVERAGEMASK_ON
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -19,6 +19,18 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _CloudNoise:
+        m_Texture: {fileID: 2800000, guid: bd46706ff72992a4c8a07db09bba3dce, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _CloudsNoise1:
+        m_Texture: {fileID: 2800000, guid: 713efc49b75fdd1498ec0d64c7f5836e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _HorizonClouds:
+        m_Texture: {fileID: 8900000, guid: c34bdd4cabed9df4c8d1319eca36fe61, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _StarSkyCubemap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -32,11 +44,15 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Texture0:
-        m_Texture: {fileID: 2800000, guid: 713efc49b75fdd1498ec0d64c7f5836e, type: 3}
+        m_Texture: {fileID: 2800000, guid: 405453a4988cacd469d30b1299d7469c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 713efc49b75fdd1498ec0d64c7f5836e, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _TextureSample2:
+        m_Texture: {fileID: 2800000, guid: 713efc49b75fdd1498ec0d64c7f5836e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _TopTexture0:
@@ -53,35 +69,55 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cloud2Thickness: -0.167
-    - _CloudHeight: 7.7
+    - _CloudCoverage: 0.798
+    - _CloudDepthAdjust: 0.7
+    - _CloudHeight: 6.37
+    - _CloudHeight2: 32.79
+    - _CloudHeight3: 32.79
+    - _CloudHeightNoise: -0.43
+    - _CloudHorizonMaskHeightOffset: 0.02
+    - _CloudHorizonMaskSharpness: 11.13
+    - _CloudShadowOffset: 0.65
     - _CloudSpeedLayer1: 0.15
     - _CloudSpeedLayer2: 0.05
     - _CloudThickness: 0.377
     - _CloudTilingLayer1: 0.49
     - _CloudTilingLayer2: 1.2
+    - _CloudTimescale: 0.05
+    - _CoverageGradientHeight: -0.24
+    - _CoverageGradientSharpness: 0.01
+    - _Float10: 5.58
     - _Float11: -1
     - _Float12: 0
     - _Float13: 1
     - _Float26: -1
     - _Float27: 0
-    - _Float3: 0.9933199
-    - _Float4: 13.25
-    - _Float5: 1.19
+    - _Float3: 31.43
+    - _Float4: 0.2
+    - _Float5: 0.25
+    - _Float6: 0.24
+    - _Float7: 1
+    - _Float8: -3.93
+    - _Float9: 2.05
     - _FogFill: 0
     - _FogHeight: 0.624
     - _FogSmoothness: 0.122
     - _GalaxyItensity: 1
     - _GlobalCloudSpeed: 0.075
+    - _GradientHeight: -0.24
+    - _GradientSharpness: 0.01
+    - _GradientSize: 360.27
     - _HideHorizonGlowScale: 0.3
-    - _HorizonGlowIntensity: 3.09
+    - _HorizonCloudsRotation: 216.7
+    - _HorizonGlowIntensity: 1.69
     - _HorizonMinAmount: 0.61
     - _HorizonMinAmountAlways: 0.238
     - _HorizonOffset: 1
     - _HorizonScale: 0
-    - _HorizonSharpness: 12.64
+    - _HorizonSharpness: 5.38
     - _HorizonSunGlowSharpness: 0.96
     - _HorizonSunGlowSpread: 0.78
-    - _HorizonSunGlowSpreadMax: 2.52
+    - _HorizonSunGlowSpreadMax: 3.77
     - _HorizonSunGlowSpreadMin: 0
     - _HorizonSunIntensity: 0.71
     - _HorizonTintSunPower: 3
@@ -93,22 +129,26 @@ Material:
     - _RotationSpeed: 0
     - _RotationX: 1
     - _RotationXSpeed: 0
+    - _Sharpness: 3.4
     - _SkyGradientPower: 2.76
     - _SkyGradientScale: 1
-    - _StarLayer1Intensity: 1
+    - _StarLayer1Intensity: 0
     - _StarLayer2Intensity: 1
     - _StarLayer3Intensity: 1
     - _StarsLayer: 3
     - _StarsSize: 12.7
+    - _SunDiskCloudsIntensity: 0.1
+    - _SunDiskCloudsTransmissionIntensity: 0.1
     - _SunDiskGlowIntensity: 0.541
     - _SunDiskGlowSharpness: 0.774
     - _SunDiskGlowSize: 0.132
     - _SunDiskGlowSizeAdjust: 0
+    - _SunDiskIntensity: 3
     - _SunDiskScale: 1
     - _SunDiskSharpness: 0.0093
     - _SunDiskSharpnessSmallAdjust: 0
     - _SunDiskSize: 0
-    - _SunDiskSizeAdjust: 0.00299
+    - _SunDiskSizeAdjust: 0.00107
     - _SunGlowIntensity: 1
     - _SunGlowScale: 75
     - _SunGlowSharpness: 121.97
@@ -122,17 +162,30 @@ Material:
     - _SunIntensity: 1.09
     - _SunRadiusA: 1.81
     - _SunRaduisB: 1.49
+    - _Timescale: 0.01
     - _UseGalaxyBackground: 0
+    - _UseRadialCoverageMask: 1
     - __dirty: 0
     m_Colors:
-    - _CloudColor: {r: 1, g: 1, b: 1, a: 0}
-    - _HorizonColor: {r: 1, g: 0.42745054, b: 0.4396673, a: 1}
+    - _CloudColor: {r: 0.740566, g: 0.92473423, b: 1, a: 1}
+    - _CloudOffset: {r: 14.1, g: 8.24, b: 0, a: 0}
+    - _CloudOffset2: {r: 0, g: 0, b: 0, a: 0}
+    - _CloudOffset3: {r: 0, g: 0, b: 0, a: 0}
+    - _CloudScroll: {r: 0.4, g: 0.1, b: 0, a: 0}
+    - _CloudScroll2: {r: 0.3, g: -0.2, b: 0, a: 0}
+    - _CloudScroll3: {r: 0, g: 0.1, b: 0, a: 0}
+    - _CloudSharpness: {r: 0.4, g: 0.44, b: 0, a: 0}
+    - _CloudTiling: {r: 1, g: 1, b: 0, a: 0}
+    - _Color0: {r: 0, g: 0, b: 0, a: 1}
+    - _CoverageGradientOffset: {r: 9.48, g: 5.07, b: 0, a: 0}
+    - _GradientOffset: {r: 0.5, g: -1.81, b: 0, a: 0}
+    - _HorizonColor: {r: 1, g: 0.77761513, b: 0.5990566, a: 1}
     - _NightColor: {r: 0, g: 0, b: 0.10377359, a: 0}
-    - _NightColorBottom: {r: 0.033021122, g: 0.004004983, b: 0.16981116, a: 0}
+    - _NightColorBottom: {r: 0.03302112, g: 0.004004983, b: 0.16980681, a: 0}
     - _NightColorTop: {r: 0, g: 0, b: 0, a: 0}
     - _SkyColor: {r: 0.120013885, g: 0.3730585, b: 0.8207547, a: 1}
-    - _SkyColorBottom: {r: 0.27830172, g: 0.8399825, b: 1, a: 1}
-    - _SkyColorTop: {r: 0.12001369, g: 0.37305832, b: 0.8207547, a: 1}
+    - _SkyColorBottom: {r: 0.27829713, g: 0.8399825, b: 1, a: 1}
+    - _SkyColorTop: {r: 0.12000909, g: 0.37305373, b: 0.8207547, a: 1}
     - _SmoothstepMinMax: {r: 0.59, g: 0.73, b: 0, a: 0}
     - _SmoothstepMinMax2: {r: 0, g: 1, b: 0, a: 0}
     - _StarLayersIntensity: {r: 1, g: 0.9, b: 0.76, a: 0}
@@ -142,4 +195,8 @@ Material:
     - _StarsScroll: {r: 0.00001, g: 1.11, b: 0.00001, a: 0}
     - _SunGlowSize: {r: 185.8, g: 1.01, b: 0.22, a: 0}
     - _TilingFalloff: {r: 0.00001, g: 1, b: 0, a: 0}
-    - _Vector0: {r: 0, g: 0.94, b: 0.94, a: 0}
+    - _Vector0: {r: -0.07, g: 0.44, b: 0, a: 0}
+    - _Vector1: {r: 0.43, g: 0.65, b: 0, a: 0}
+    - _Vector2: {r: 4.5, g: 4.21, b: 0, a: 0}
+    - _Vector3: {r: 1, g: 6.86, b: 0, a: 0}
+    - _Vector4: {r: 0.67, g: 1, b: 0, a: 0}
