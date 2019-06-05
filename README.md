@@ -33,6 +33,10 @@ Includes Shader Function: RotateCubemap2D
 # Shader Functions
 -------
 
+### [Screen Space UVS Locked To Object](https://github.com/DMeville/AmplifyShaderCommunityExtras/blob/master/Assets/ASECommunityExtras/ShaderFunctions/ScreenSpaceUVsLockedToObjectPos) - by [The C.reator](https://twitter.com/cayou66)
+![SSUVSLTO](https://i.imgur.com/UR1AQVH.gif)
+------
+
 ### [JinToon](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/JinToon) - by [jinseiisla](https://twitter.com/jinseiisla)
 ![img](https://i.imgur.com/dFwD2u3.png)
 ------
