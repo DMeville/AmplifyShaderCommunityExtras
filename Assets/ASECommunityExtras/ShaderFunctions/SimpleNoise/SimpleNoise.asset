@@ -13,7 +13,9 @@ MonoBehaviour:
   m_Name: SimpleNoise
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
-    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n781;73;1772;777;1251;655;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;5;-594,-193;Float;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;3;-442,-413;Float;False;float2
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n778;73;1774;777;1095;732.5;1;True;False\nNode;AmplifyShaderEditor.FunctionInput;5;-594,-193;Float;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-264,-416;Float;False;return
+    frac(sin(dot(uv, float2(12.9898, 78.233)))*43758.5453)@;1;False;1;True;uv;FLOAT2;0,0;In;;Float;False;unity_noise_randomValue;False;True;0;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;1;-2,-420;Float;False;return
+    (1.0-t)*a + (t*b)@;1;False;3;True;a;FLOAT;0;In;;Float;False;True;b;FLOAT;0;In;;Float;False;True;t;FLOAT;0;In;;Float;False;unity_noise_interpolate;False;True;0;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-589,-94;Float;False;Scale;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;3;-442,-413;Float;False;float2
     i = floor(uv)@$    float2 f = frac(uv)@$    f = f * f * (3.0 - 2.0 * f)@$$    uv
     = abs(frac(uv) - 0.5)@$    float2 c0 = i + float2(0.0, 0.0)@$    float2 c1 = i
     + float2(1.0, 0.0)@$    float2 c2 = i + float2(0.0, 1.0)@$    float2 c3 = i +
@@ -21,15 +23,13 @@ MonoBehaviour:
     \   float r2 = unity_noise_randomValue(c2)@$    float r3 = unity_noise_randomValue(c3)@$$
     \   float bottomOfGrid = unity_noise_interpolate(r0, r1, f.x)@$    float topOfGrid
     = unity_noise_interpolate(r2, r3, f.x)@$    float t = unity_noise_interpolate(bottomOfGrid,
-    topOfGrid, f.y)@$    return t@;1;False;1;True;uv;FLOAT2;0,0;In;;Float;False;unity_valueNoise;False;True;2;2;1;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-264,-416;Float;False;return
-    frac(sin(dot(uv, float2(12.9898, 78.233)))*43758.5453)@;1;False;1;True;uv;FLOAT2;0,0;In;;Float;False;unity_noise_randomValue;False;True;0;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;1;-2,-420;Float;False;return
-    (1.0-t)*a + (t*b)@;1;False;3;True;a;FLOAT;0;In;;Float;False;True;b;FLOAT;0;In;;Float;False;True;t;FLOAT;0;In;;Float;False;unity_noise_interpolate;False;True;0;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-589,-94;Float;False;Scale;3;1;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;4;-230,-136;Float;False;float
+    topOfGrid, f.y)@$    return t@;1;False;1;True;uv;FLOAT2;0,0;In;;Float;False;unity_valueNoise;False;True;2;2;1;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;4;-230,-136;Float;False;{$float
     t = 0.0@$$    float freq = pow(2.0, float(0))@$    float amp = pow(0.5, float(3-0))@$
     \   t += unity_valueNoise(float2(UV.x*Scale.x/freq, UV.y*Scale.x/freq))*amp@$$
     \   freq = pow(2.0, float(1))@$    amp = pow(0.5, float(3-1))@$    t += unity_valueNoise(float2(UV.x*Scale.y/freq,
     UV.y*Scale.y/freq))*amp@$$    freq = pow(2.0, float(2))@$    amp = pow(0.5, float(3-2))@$
     \   t += unity_valueNoise(float2(UV.x*Scale.z/freq, UV.y*Scale.z/freq))*amp@$$
-    \   Out = t@;7;False;3;True;UV;FLOAT2;0,0;In;;Float;False;True;Scale;FLOAT3;0,0,0;In;;Float;False;True;Out;FLOAT;0;Out;;Float;False;Unity_SimpleNoise_float;True;False;2;3;2;4;0;FLOAT;0;False;1;FLOAT2;0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;2;FLOAT;0;FLOAT;4\nNode;AmplifyShaderEditor.FunctionOutput;0;47,-110;Float;False;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;4;1;5;0\nWireConnection;4;2;6;0\nWireConnection;0;0;4;4\nASEEND*/\n//CHKSM=1B70E75CAD5E8E5A8ADAAD8BD887A92DF6176AEE"
+    \   Out = t@$};7;False;3;True;UV;FLOAT2;0,0;In;;Float;False;True;Scale;FLOAT3;0,0,0;In;;Float;False;True;Out;FLOAT;0;Out;;Float;False;Unity_SimpleNoise_float;True;False;2;3;2;4;0;FLOAT;0;False;1;FLOAT2;0,0;False;2;FLOAT3;0,0,0;False;3;FLOAT;0;False;2;FLOAT;0;FLOAT;4\nNode;AmplifyShaderEditor.FunctionOutput;0;47,-110;Float;False;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;4;1;5;0\nWireConnection;4;2;6;0\nWireConnection;0;0;4;4\nASEEND*/\n//CHKSM=B918FCA0A11843AEE774A0E4179EE693384737B3"
   m_functionName: 
   m_description: Wrapped version of the Simple Noise node from shadergraph
   m_additionalIncludes:
