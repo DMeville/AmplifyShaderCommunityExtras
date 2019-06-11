@@ -89,3 +89,10 @@ Includes Shader Function: RotateCubemap2D
 ### [Note Node](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/CommunityNodes/NoteNode) - by [DMeville](https://twitter.com/dmeville)
 ![Note Node](https://i.imgur.com/CanEU7S.png)
 
+# Misc Tools
+### [Material To Texture Baker](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/CommunityNodes/NoteNode) - by [totallyRonja](https://twitter.com/totallyRonja)
+From the tutorial here: http://www.ronja-tutorials.com/2018/10/13/baking_shaders.html
+Very useful to bake noise shaders to textures. Or combine masks into RGBA channels. Or anything else you can think of!
+![Img](https://i.imgur.com/eey42pl.png)
+
+
