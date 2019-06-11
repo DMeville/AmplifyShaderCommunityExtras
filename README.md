@@ -33,6 +33,22 @@ Includes Shader Function: RotateCubemap2D
 # Shader Functions
 -------
 
+### [Voronoi Noise](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/VoronoiNoise) - by [DMeville](https://twitter.com/dmeville)
+![img](https://i.imgur.com/bnmhDWn.png)
+------
+
+### [Voronoi Noise 3d Tiled](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/VoronoiNoise3dTiled) - by [DMeville](https://twitter.com/dmeville)
+![img](https://i.imgur.com/5qOp9Q8.png)
+------
+
+### [Layered Perlin Noise 2d Tiled](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/LayeredPerlinNoise2dTiled) - by [DMeville](https://twitter.com/dmeville)
+![img](https://i.imgur.com/8t72l3W.png)
+------
+
+### [Simple Noise](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/SimpleNoise) - by [DMeville](https://twitter.com/dmeville)
+![img](https://i.imgur.com/2pKpMGM.png)
+------
+
 ### [Screen Space UVS Locked To Object](https://github.com/DMeville/AmplifyShaderCommunityExtras/blob/master/Assets/ASECommunityExtras/ShaderFunctions/ScreenSpaceUVsLockedToObjectPos) - by [The C.reator](https://twitter.com/cayou66)
 ![SSUVSLTO](https://i.imgur.com/UR1AQVH.gif)
 ------
