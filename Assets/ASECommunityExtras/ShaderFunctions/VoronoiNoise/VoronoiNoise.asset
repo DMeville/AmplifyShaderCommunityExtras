@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: VoronoiNoise
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n602;226;1309;440;1004.168;330.6859;1.3;True;False\nNode;AmplifyShaderEditor.FunctionInput;3;-478.851,0.3242862;Float;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;5;-478.8506,152.4243;Float;False;CellDensity;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;4;-484.0506,69.22427;Float;False;AngleOffset;1;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;1;-179.1106,-133.9626;Float;False;$
+    \   float2x2 m = float2x2(15.27, 47.63, 99.41, 89.98)@$    UV = frac(sin(mul(UV,
+    m)) * 46839.32)@$    return float2(sin(UV.y*+offset)*0.5+0.5, cos(UV.x*offset)*0.5+0.5)@$$;2;False;2;True;UV;FLOAT2;0,0;In;;Float;False;True;offset;FLOAT;0;In;;Float;False;unity_voronoi_noise_randomVector;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-182.4894,17.36258;Float;False;$
+    \   float2 g = floor(UV * CellDensity)@$    float2 f = frac(UV * CellDensity)@$
+    \   float t = 8.0@$    float3 res = float3(8.0, 0.0, 0.0)@$$    for(int y=-1@
+    y<=1@ y++)$    {$        for(int x=-1@ x<=1@ x++)$        {$            float2
+    lattice = float2(x,y)@$            float2 offset = unity_voronoi_noise_randomVector(lattice
+    + g, AngleOffset)@$            float d = distance(lattice + offset, f)@$            if(d
+    < res.x)$            {$                res = float3(d, offset.x, offset.y)@$                Out
+    = res.x@$                Cells = res.y@$            }$        }$    }$;7;False;5;True;UV;FLOAT2;0,0;In;;Float;False;True;AngleOffset;FLOAT;0;In;;Float;False;True;CellDensity;FLOAT;0;In;;Float;False;True;Out;FLOAT;0;Out;;Float;False;True;Cells;FLOAT;0;Out;;Float;False;Unity_Voronoi_float;False;True;1;1;6;0;FLOAT;0;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;3;FLOAT;0;FLOAT;5;FLOAT;6\nNode;AmplifyShaderEditor.FunctionOutput;0;143.0998,2;Float;False;True;DistanceToPoint;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;6;162.0494,74.42438;Float;False;False;Cells;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;2;1;3;0\nWireConnection;2;2;4;0\nWireConnection;2;3;5;0\nWireConnection;0;0;2;5\nWireConnection;6;0;2;6\nASEEND*/\n//CHKSM=62D2E2B11B7C8619391F3CB51150C2060680678E"
+  m_functionName: 
+  m_description: 2d Voronoi noise straight from unity shadergraph.  Does not tile
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 3
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

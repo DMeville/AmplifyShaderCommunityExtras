@@ -69,7 +69,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _Cloud2Thickness: -0.167
-    - _CloudCoverage: 0.798
+    - _CloudCoverage: 0.829
     - _CloudDepthAdjust: 0.7
     - _CloudHeight: 6.37
     - _CloudHeight2: 32.79
