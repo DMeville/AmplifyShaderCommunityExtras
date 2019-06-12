@@ -35,6 +35,24 @@ public class BakeTextureWindow:EditorWindow {
         using(var check = new EditorGUI.ChangeCheckScope()) {
             ImageMaterial = (Material)EditorGUILayout.ObjectField("Material", ImageMaterial, typeof(Material), false);
             Resolution = EditorGUILayout.Vector2IntField("Image Resolution", Resolution);
+            GUILayout.BeginHorizontal();
+            if(GUILayout.Button("512")) {
+                Resolution = new Vector2Int(512, 512);
+            }
+            if(GUILayout.Button("1024")) {
+                Resolution = new Vector2Int(1024, 1024);
+            }
+            if(GUILayout.Button("2048")) {
+                Resolution = new Vector2Int(2048, 2048);
+            }
+            if(GUILayout.Button("4096")) {
+                Resolution = new Vector2Int(4096, 4096);
+            }
+            if(GUILayout.Button("8192")) {
+                Resolution = new Vector2Int(8192, 8192);
+            }
+            GUILayout.EndHorizontal();
+
             FilePath = FileField(FilePath);
 
             if(check.changed) {
@@ -43,9 +61,11 @@ public class BakeTextureWindow:EditorWindow {
         }
 
         GUI.enabled = hasMaterial && hasResolution && hasFilePath;
-        if(GUILayout.Button("Bake")) {
+        if(GUILayout.Button("---- BAKE ME ----- ")) {
             BakeTexture();
         }
+
+     
         GUI.enabled = true;
 
         //tell the user what inputs are missing

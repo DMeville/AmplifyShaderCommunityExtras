@@ -13,38 +13,27 @@ MonoBehaviour:
   m_Name: VoronoiNoise3DTiled
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
-    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n778;73;1774;777;1490.108;597.8788;1.363438;True;False\nNode;AmplifyShaderEditor.CommentaryNode;1;-119.4997,-406.3427;Float;False;628.6735;392.4559;Comment;6;8;7;6;4;3;2;Required
-    functions for tiling voronoi noise;1,1,1,1;0;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;15;-424.4472,9.54736;Float;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;19;-746.9446,248.9949;Float;False;Angle
-    Offset;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;6;68.01536,-180.0587;Float;False;float3
-    dotDir = float3(12.9898, 78.233, 37.719)@ $//make value smaller to avoid artefacts$\tfloat3
-    smallValue = cos(value)@$\t//get scalar value from 3d vector$\tfloat random =
-    dot(smallValue, dotDir)@$\t//make value more random by making it bigger and then
-    taking the factional part$\trandom = frac(sin(random) * 143758.5453)@$\treturn
-    random@;1;False;1;True;value;FLOAT3;0,0,0;In;;Float;False;rand3dTo1d1Param;False;True;1;2;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;14;-568.747,-50.25268;Float;False;FLOAT3;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;3;6.718462,-253.6826;Float;False;return
-    float3($\t\trand1dTo1d(value, 3.9812),$\t\trand1dTo1d(value, 7.1536),$\t\trand1dTo1d(value,
-    5.7241)$\t)@;3;False;1;True;value;FLOAT;0;In;;Float;False;rand1dTo3d;False;True;1;2;1;0;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;9;-26.00004,87.30001;Float;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.CustomExpressionNode;8;301.2679,-358.6755;Float;False;$//make
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n778;73;1774;777;1581.458;543.3407;1.363438;True;False\nNode;AmplifyShaderEditor.CommentaryNode;1;-119.4997,-406.3427;Float;False;628.6735;392.4559;Comment;6;8;7;6;4;3;2;Required
+    functions for tiling voronoi noise;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CustomExpressionNode;4;-102.7373,-103.6963;Float;False;float3
+    positiveDivident = divident % divisor + divisor@$return positiveDivident % divisor@;3;False;2;True;divident;FLOAT3;0,0,0;In;;Float;False;True;divisor;FLOAT3;0,0,0;In;;Float;False;modulo3;False;True;0;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;8;301.2679,-358.6755;Float;False;$//make
     value smaller to avoid artefacts$\tfloat3 smallValue = cos(value)@$\t//get scalar
     value from 3d vector$\tfloat random = dot(smallValue, dotDir)@$\t//make value
     more random by making it bigger and then taking the factional part$\trandom =
-    frac(sin(random) * 143758.5453)@$\treturn random@;1;False;2;True;value;FLOAT3;0,0,0;In;;Float;False;True;dotDir;FLOAT3;0,0,0;In;;Float;False;rand3dTo1d;False;True;0;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;4;-102.7373,-103.6963;Float;False;float3
-    positiveDivident = divident % divisor + divisor@$return positiveDivident % divisor@;3;False;2;True;divident;FLOAT3;0,0,0;In;;Float;False;True;divisor;FLOAT3;0,0,0;In;;Float;False;modulo;False;True;0;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;13;-749.447,-12.55266;Float;False;Height;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;7;332.4753,-249.9066;Float;False;return
-    float3($\t\trand3dTo1d(value, float3(12.989, 78.233, 37.719)),$\t\trand3dTo1d(value,
-    float3(39.346, 11.135, 83.155)),$\t\trand3dTo1d(value, float3(73.156, 52.235,
-    09.151))$\t)@;3;False;1;True;value;FLOAT3;0,0,0;In;;Float;False;rand3dTo3d;False;True;1;8;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;18;-746.845,70.64759;Float;False;Cell
-    Count;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;12;-748.1479,-95.75259;Float;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-86.36737,-358.9246;Float;False;float
-    random = frac(sin(value + mutator) * 143758.5453)@$\treturn random@;1;False;2;True;value;FLOAT;0;In;;Float;False;True;mutator;FLOAT;0.546;In;;Float;False;rand1dTo1d;False;True;0;2;0;FLOAT;0;False;1;FLOAT;0.546;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;17;-746.8456,151.2472;Float;False;Period;3;4;False;1;0;FLOAT3;4,4,4;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;5;-240.9092,89.88645;Float;False;float3
+    frac(sin(random) * 143758.5453)@$\treturn random@;1;False;2;True;value;FLOAT3;0,0,0;In;;Float;False;True;dotDir;FLOAT3;0,0,0;In;;Float;False;rand3dTo1d;False;True;0;2;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;15;-424.4472,9.54736;Float;False;2;2;0;FLOAT3;0,0,0;False;1;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;19;-746.9446,248.9949;Float;False;Angle
+    Offset;3;0;False;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;5;-240.9092,89.88645;Float;False;float3
     baseCell = floor(value)@$$\t\t\t\t//first pass to find the closest cell$\t\t\t\tfloat
     minDistToCell = 10@$\t\t\t\tfloat3 toClosestCell@$\t\t\t\tfloat3 closestCell@$\t\t\t\t[unroll]$\t\t\t\tfor(int
     x1=-1@ x1<=1@ x1++){$\t\t\t\t\t[unroll]$\t\t\t\t\tfor(int y1=-1@ y1<=1@ y1++){$\t\t\t\t\t\t[unroll]$\t\t\t\t\t\tfor(int
     z1=-1@ z1<=1@ z1++){$\t\t\t\t\t\t\tfloat3 cell = baseCell + float3(x1, y1, z1)@$\t\t\t\t\t\t\tfloat3
-    tiledCell = modulo(cell, period)@$\t\t\t\t\t\t\tfloat3 cellPosition = cell + rand3dTo3d(tiledCell)*angleOffset@$\t\t\t\t\t\t\tfloat3
-    toCell = cellPosition - value@$\t\t\t\t\t\t\tfloat distToCell = length(toCell)@$\t\t\t\t\t\t\tif(distToCell
+    tiledCell = modulo3(cell, period)@$\t\t\t\t\t\t\tfloat3 cellPosition = cell +
+    rand3dTo3d(tiledCell)*angleOffset@$\t\t\t\t\t\t\tfloat3 toCell = cellPosition
+    - value@$\t\t\t\t\t\t\tfloat distToCell = length(toCell)@$\t\t\t\t\t\t\tif(distToCell
     < minDistToCell){$\t\t\t\t\t\t\t\tminDistToCell = distToCell@$\t\t\t\t\t\t\t\tclosestCell
     = cell@$\t\t\t\t\t\t\t\ttoClosestCell = toCell@$\t\t\t\t\t\t\t}$\t\t\t\t\t\t}$\t\t\t\t\t}$\t\t\t\t}$$\t\t\t\t//second
     pass to find the distance to the closest edge$\t\t\t\tfloat minEdgeDistance =
     10@$\t\t\t\t[unroll]$\t\t\t\tfor(int x2=-1@ x2<=1@ x2++){$\t\t\t\t\t[unroll]$\t\t\t\t\tfor(int
     y2=-1@ y2<=1@ y2++){$\t\t\t\t\t\t[unroll]$\t\t\t\t\t\tfor(int z2=-1@ z2<=1@ z2++){$\t\t\t\t\t\t\tfloat3
-    cell = baseCell + float3(x2, y2, z2)@$\t\t\t\t\t\t\tfloat3 tiledCell = modulo(cell,
+    cell = baseCell + float3(x2, y2, z2)@$\t\t\t\t\t\t\tfloat3 tiledCell = modulo3(cell,
     period)@$\t\t\t\t\t\t\tfloat3 cellPosition = cell + rand3dTo3d(tiledCell)@$\t\t\t\t\t\t\tfloat3
     toCell = cellPosition - value@$$\t\t\t\t\t\t\tfloat3 diffToClosestCell = abs(closestCell
     - cell)@$\t\t\t\t\t\t\tbool isClosestCell = diffToClosestCell.x + diffToClosestCell.y
@@ -53,7 +42,19 @@ MonoBehaviour:
     = normalize(toCell - toClosestCell)@$\t\t\t\t\t\t\t\tfloat edgeDistance = dot(toCenter,
     cellDifference)@$\t\t\t\t\t\t\t\tminEdgeDistance = min(minEdgeDistance, edgeDistance)@$\t\t\t\t\t\t\t}$\t\t\t\t\t\t}$\t\t\t\t\t}$\t\t\t\t}$$\t\t\t\tfloat
     random = rand3dTo1d1Param(closestCell)@$\t\t\t\treturn float3(minDistToCell, random,
-    minEdgeDistance)@;3;False;3;True;value;FLOAT3;0,0,0;In;;Float;False;True;period;FLOAT3;0,0,0;In;;Float;False;True;angleOffset;FLOAT3;0,0,0;In;;Float;False;voronoiNoise;False;True;4;4;6;7;3;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionOutput;10;376.7368,118.5626;Float;False;False;Cells;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;375.9198,39.03344;Float;False;True;DistanceToPoint;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;11;378.7313,199.0456;Float;False;False;DistanceToEdge;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;15;0;14;0\nWireConnection;15;1;18;0\nWireConnection;14;0;12;0\nWireConnection;14;2;13;0\nWireConnection;9;0;5;0\nWireConnection;5;0;15;0\nWireConnection;5;1;17;0\nWireConnection;5;2;19;0\nWireConnection;10;0;9;1\nWireConnection;0;0;9;0\nWireConnection;11;0;9;2\nASEEND*/\n//CHKSM=7848C27E29780CE3713AEBAB6D8B9F8484B06274"
+    minEdgeDistance)@;3;False;3;True;value;FLOAT3;0,0,0;In;;Float;False;True;period;FLOAT3;0,0,0;In;;Float;False;True;angleOffset;FLOAT3;0,0,0;In;;Float;False;voronoiNoise;False;True;4;4;6;7;3;3;0;FLOAT3;0,0,0;False;1;FLOAT3;0,0,0;False;2;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.DynamicAppendNode;14;-568.747,-50.25268;Float;False;FLOAT3;4;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;6;68.01536,-180.0587;Float;False;float3
+    dotDir = float3(12.9898, 78.233, 37.719)@ $//make value smaller to avoid artefacts$\tfloat3
+    smallValue = cos(value)@$\t//get scalar value from 3d vector$\tfloat random =
+    dot(smallValue, dotDir)@$\t//make value more random by making it bigger and then
+    taking the factional part$\trandom = frac(sin(random) * 143758.5453)@$\treturn
+    random@;1;False;1;True;value;FLOAT3;0,0,0;In;;Float;False;rand3dTo1d1Param;False;True;1;2;1;0;FLOAT3;0,0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.BreakToComponentsNode;9;-26.00004,87.30001;Float;False;FLOAT3;1;0;FLOAT3;0,0,0;False;16;FLOAT;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4;FLOAT;5;FLOAT;6;FLOAT;7;FLOAT;8;FLOAT;9;FLOAT;10;FLOAT;11;FLOAT;12;FLOAT;13;FLOAT;14;FLOAT;15\nNode;AmplifyShaderEditor.CustomExpressionNode;7;332.4753,-249.9066;Float;False;return
+    float3($\t\trand3dTo1d(value, float3(12.989, 78.233, 37.719)),$\t\trand3dTo1d(value,
+    float3(39.346, 11.135, 83.155)),$\t\trand3dTo1d(value, float3(73.156, 52.235,
+    09.151))$\t)@;3;False;1;True;value;FLOAT3;0,0,0;In;;Float;False;rand3dTo3d;False;True;1;8;1;0;FLOAT3;0,0,0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.FunctionInput;13;-749.447,-12.55266;Float;False;Height;1;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;18;-746.845,70.64759;Float;False;Cell
+    Count;1;3;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;12;-748.1479,-95.75259;Float;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;17;-746.8456,151.2472;Float;False;Period;3;4;False;1;0;FLOAT3;4,4,4;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;3;6.718462,-253.6826;Float;False;return
+    float3($\t\trand1dTo1d(value, 3.9812),$\t\trand1dTo1d(value, 7.1536),$\t\trand1dTo1d(value,
+    5.7241)$\t)@;3;False;1;True;value;FLOAT;0;In;;Float;False;rand1dTo3d;False;True;1;2;1;0;FLOAT;0;False;1;FLOAT3;0\nNode;AmplifyShaderEditor.CustomExpressionNode;2;-86.36737,-358.9246;Float;False;float
+    random = frac(sin(value + mutator) * 143758.5453)@$\treturn random@;1;False;2;True;value;FLOAT;0;In;;Float;False;True;mutator;FLOAT;0.546;In;;Float;False;rand1dTo1d;False;True;0;2;0;FLOAT;0;False;1;FLOAT;0.546;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;11;378.7313,199.0456;Float;False;False;DistanceToEdge;1;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;10;376.7368,118.5626;Float;False;False;Cells;2;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;375.9198,39.03344;Float;False;True;DistanceToPoint;0;True;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;15;0;14;0\nWireConnection;15;1;18;0\nWireConnection;5;0;15;0\nWireConnection;5;1;17;0\nWireConnection;5;2;19;0\nWireConnection;14;0;12;0\nWireConnection;14;2;13;0\nWireConnection;9;0;5;0\nWireConnection;11;0;9;2\nWireConnection;10;0;9;1\nWireConnection;0;0;9;0\nASEEND*/\n//CHKSM=379D88C85D1C99A598E90D8FA7CB792DF64268D5"
   m_functionName: 
   m_description: Tiled 3D Noise. Flickers a little if period and cell count are round
     numbers for some reason. And it doesn't tile perfectly unless cellcount and period

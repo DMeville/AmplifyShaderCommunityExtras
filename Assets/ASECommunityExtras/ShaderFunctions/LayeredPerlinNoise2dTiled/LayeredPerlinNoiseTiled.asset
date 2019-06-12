@@ -13,40 +13,40 @@ MonoBehaviour:
   m_Name: LayeredPerlinNoiseTiled
   m_EditorClassIdentifier: 
   m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
-    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n781;73;1772;777;1509.417;699.3219;1.48407;True;False\nNode;AmplifyShaderEditor.CommentaryNode;18;-14.70839,-604.6762;Float;False;909.639;349.1595;Comment;7;10;11;12;13;16;14;15;Extra
-    Required functions;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CustomExpressionNode;14;642.084,-542.3717;Float;False;return
-    interpolator * interpolator@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeIn;False;True;0;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;16;646.469,-365.5167;Float;False;float
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n667;73;1842;777;994.0753;406.568;1;True;False\nNode;AmplifyShaderEditor.CommentaryNode;18;-14.70839,-604.6762;Float;False;909.639;349.1595;Comment;7;10;11;12;13;16;14;15;Extra
+    Required functions;1,1,1,1;0;0\nNode;AmplifyShaderEditor.CustomExpressionNode;11;227.7532,-554.6762;Float;False;float2
+    positiveDivident = divident % divisor + divisor@$return positiveDivident % divisor@;2;False;2;True;divident;FLOAT2;0,0;In;;Float;False;True;divisor;FLOAT2;0,0;In;;Float;False;modulo2;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;16;646.469,-365.5167;Float;False;float
     easeInValue = easeIn(interpolator)@$              float easeOutValue = easeOut(interpolator)@$
-    \             return lerp(easeInValue, easeOutValue, interpolator)@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeInOut;False;True;2;15;14;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;13;465.6371,-479.6382;Float;False;float2
+    \             return lerp(easeInValue, easeOutValue, interpolator)@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeInOut;False;True;2;15;14;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;8;232,-81;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;9;-44.76967,98.84835;Float;False;Constant;_Float0;Float
+    0;0;0;Create;True;0;0;False;0;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;7;-256,-254;Float;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;1;-486,-173;Float;False;Cell
+    Amount;1;2;False;1;0;FLOAT;2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;17;-473.3075,192.0065;Float;False;Octaves;1;0;False;1;0;FLOAT;4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;10;35.29162,-552.8969;Float;False;
+    float2 cellsMimimum = floor(value)@$\t\t\t\tfloat2 cellsMaximum = ceil(value)@$$\t\t\t\tcellsMimimum
+    = modulo2(cellsMimimum, period)@$\t\t\t\tcellsMaximum = modulo2(cellsMaximum,
+    period)@$$\t\t\t\t//generate random directions$\t\t\t\tfloat2 lowerLeftDirection
+    = rand2dTo2d(float2(cellsMimimum.x, cellsMimimum.y)) * 2 - 1@$\t\t\t\tfloat2 lowerRightDirection
+    = rand2dTo2d(float2(cellsMaximum.x, cellsMimimum.y)) * 2 - 1@$\t\t\t\tfloat2 upperLeftDirection
+    = rand2dTo2d(float2(cellsMimimum.x, cellsMaximum.y)) * 2 - 1@$\t\t\t\tfloat2 upperRightDirection
+    = rand2dTo2d(float2(cellsMaximum.x, cellsMaximum.y)) * 2 - 1@$$\t\t\t\tfloat2
+    fraction = frac(value)@$$\t\t\t\t//get values of cells based on fraction and cell
+    directions$\t\t\t\tfloat lowerLeftFunctionValue = dot(lowerLeftDirection, fraction
+    - float2(0, 0))@$\t\t\t\tfloat lowerRightFunctionValue = dot(lowerRightDirection,
+    fraction - float2(1, 0))@$\t\t\t\tfloat upperLeftFunctionValue = dot(upperLeftDirection,
+    fraction - float2(0, 1))@$\t\t\t\tfloat upperRightFunctionValue = dot(upperRightDirection,
+    fraction - float2(1, 1))@$$\t\t\t\tfloat interpolatorX = easeInOut(fraction.x)@$\t\t\t\tfloat
+    interpolatorY = easeInOut(fraction.y)@$$\t\t\t\t//interpolate between values$\t\t\t\tfloat
+    lowerCells = lerp(lowerLeftFunctionValue, lowerRightFunctionValue, interpolatorX)@$\t\t\t\tfloat
+    upperCells = lerp(upperLeftFunctionValue, upperRightFunctionValue, interpolatorX)@$$\t\t\t\tfloat
+    noise = lerp(lowerCells, upperCells, interpolatorY)@$\t\t\t\treturn noise@;1;False;2;True;value;FLOAT2;0,0;In;;Float;False;True;period;FLOAT2;0,0;In;;Float;False;perlinNoise;False;True;3;12;16;11;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;4;-476,72;Float;False;Persistance;1;5;False;1;0;FLOAT;0.4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;15;647.9306,-461.983;Float;False;
+    return 1 - easeIn(1 - interpolator)@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeOut;False;True;1;14;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-465,-302;Float;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;13;465.6371,-479.6382;Float;False;float2
     smallValue = cos(value)@$\tfloat random = dot(smallValue, dotDir)@$\trandom =
     frac(sin(random) * 143758.5453)@$\treturn random@;1;False;2;True;value;FLOAT2;0,0;In;;Float;False;True;dotDir;FLOAT2;0,0;In;;Float;False;rand2dTo1d;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;12;464.0856,-550.7404;Float;False;return
     float2($\t\trand2dTo1d(value, float2(12.989, 78.233)),$\t\trand2dTo1d(value, float2(39.346,
-    11.135))$\t)@;2;False;1;True;value;FLOAT2;0,0;In;;Float;False;rand2dTo2d;False;True;1;13;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;11;226.2691,-554.6762;Float;False;float2
-    positiveDivident = divident % divisor + divisor@$return positiveDivident % divisor@;2;False;2;True;divident;FLOAT2;0,0;In;;Float;False;True;divisor;FLOAT2;0,0;In;;Float;False;modulo;False;True;0;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;10;35.29162,-552.8969;Float;False;
-    float2 cellsMimimum = floor(value)@$\t\t\t\tfloat2 cellsMaximum = ceil(value)@$$\t\t\t\tcellsMimimum
-    = modulo(cellsMimimum, period)@$\t\t\t\tcellsMaximum = modulo(cellsMaximum, period)@$$\t\t\t\t//generate
-    random directions$\t\t\t\tfloat2 lowerLeftDirection = rand2dTo2d(float2(cellsMimimum.x,
-    cellsMimimum.y)) * 2 - 1@$\t\t\t\tfloat2 lowerRightDirection = rand2dTo2d(float2(cellsMaximum.x,
-    cellsMimimum.y)) * 2 - 1@$\t\t\t\tfloat2 upperLeftDirection = rand2dTo2d(float2(cellsMimimum.x,
-    cellsMaximum.y)) * 2 - 1@$\t\t\t\tfloat2 upperRightDirection = rand2dTo2d(float2(cellsMaximum.x,
-    cellsMaximum.y)) * 2 - 1@$$\t\t\t\tfloat2 fraction = frac(value)@$$\t\t\t\t//get
-    values of cells based on fraction and cell directions$\t\t\t\tfloat lowerLeftFunctionValue
-    = dot(lowerLeftDirection, fraction - float2(0, 0))@$\t\t\t\tfloat lowerRightFunctionValue
-    = dot(lowerRightDirection, fraction - float2(1, 0))@$\t\t\t\tfloat upperLeftFunctionValue
-    = dot(upperLeftDirection, fraction - float2(0, 1))@$\t\t\t\tfloat upperRightFunctionValue
-    = dot(upperRightDirection, fraction - float2(1, 1))@$$\t\t\t\tfloat interpolatorX
-    = easeInOut(fraction.x)@$\t\t\t\tfloat interpolatorY = easeInOut(fraction.y)@$$\t\t\t\t//interpolate
-    between values$\t\t\t\tfloat lowerCells = lerp(lowerLeftFunctionValue, lowerRightFunctionValue,
-    interpolatorX)@$\t\t\t\tfloat upperCells = lerp(upperLeftFunctionValue, upperRightFunctionValue,
-    interpolatorX)@$$\t\t\t\tfloat noise = lerp(lowerCells, upperCells, interpolatorY)@$\t\t\t\treturn
-    noise@;1;False;2;True;value;FLOAT2;0,0;In;;Float;False;True;period;FLOAT2;0,0;In;;Float;False;perlinNoise;False;True;3;12;16;11;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;5;-56.53839,-92;Float;False;float
-    noise = 0@$\t\t\t\tfloat frequency = 1@$\t\t\t\tfloat factor = 1@$$\t\t\t\t[unroll]$\t\t\t\tfor(int
+    11.135))$\t)@;2;False;1;True;value;FLOAT2;0,0;In;;Float;False;rand2dTo2d;False;True;1;13;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.CustomExpressionNode;14;642.084,-542.3717;Float;False;return
+    interpolator * interpolator@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeIn;False;True;0;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;3;-483,-19;Float;False;Roughness;1;4;False;1;0;FLOAT;3;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;2;-477,-98;Float;False;Period;1;3;False;1;0;FLOAT;4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;5;-56.53839,-92;Float;False;float
+    noise = 0@$\t\t\t\tfloat frequency = 1@$\t\t\t\tfloat factor = 1@$$\t\t\t\t[unroll(OCTAVES)]$\t\t\t\tfor(int
     i=0@ i<OCTAVES@ i++){$\t\t\t\t\tnoise = noise + perlinNoise(value * frequency
     + i * 0.72354, _Period * frequency) * factor@$\t\t\t\t\tfactor *= _Persistance@$\t\t\t\t\tfrequency
-    *= _Roughness@$\t\t\t\t}$$\t\t\t\treturn noise@;1;False;5;True;value;FLOAT2;0,0;In;;Float;False;True;_Roughness;FLOAT;0;In;;Float;False;True;_Persistance;FLOAT;0;In;;Float;False;True;_Period;FLOAT;0;In;;Float;False;True;OCTAVES;FLOAT;0;In;;Float;False;sampleLayeredNoise;False;True;1;10;5;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.CustomExpressionNode;15;647.9306,-461.983;Float;False;
-    return 1 - easeIn(1 - interpolator)@;1;False;1;True;interpolator;FLOAT;0;In;;Float;False;easeOut;False;True;1;14;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;4;-476,72;Float;False;Persistance;1;5;False;1;0;FLOAT;0.4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;9;-44.76967,98.84835;Float;False;Constant;_Float0;Float
-    0;0;0;Create;True;0;0;False;0;0.5;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;8;232,-81;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;6;-465,-302;Float;False;UV;2;1;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;2;-477,-98;Float;False;Period;1;3;False;1;0;FLOAT;4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;3;-483,-19;Float;False;Roughness;1;4;False;1;0;FLOAT;3;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;17;-473.3075,192.0065;Float;False;Octaves;1;0;False;1;0;FLOAT;4;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;1;-486,-173;Float;False;Cell
-    Amount;1;2;False;1;0;FLOAT;2;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;7;-256,-254;Float;False;2;2;0;FLOAT2;0,0;False;1;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionOutput;0;363.4841,-82.57965;Float;False;True;Out;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;5;0;7;0\nWireConnection;5;1;3;0\nWireConnection;5;2;4;0\nWireConnection;5;3;2;0\nWireConnection;5;4;17;0\nWireConnection;8;0;5;0\nWireConnection;8;1;9;0\nWireConnection;7;0;6;0\nWireConnection;7;1;1;0\nWireConnection;0;0;8;0\nASEEND*/\n//CHKSM=6C17E3EBB34285DDFC14E62876A0612DB7668EBA"
+    *= _Roughness@$\t\t\t\t}$$\t\t\t\treturn noise@;1;False;5;True;value;FLOAT2;0,0;In;;Float;False;True;_Roughness;FLOAT;0;In;;Float;False;True;_Persistance;FLOAT;0;In;;Float;False;True;_Period;FLOAT;0;In;;Float;False;True;OCTAVES;FLOAT;0;In;;Float;False;sampleLayeredNoise;False;True;1;10;5;0;FLOAT2;0,0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionOutput;0;363.4841,-82.57965;Float;False;True;Out;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;8;0;5;0\nWireConnection;8;1;9;0\nWireConnection;7;0;6;0\nWireConnection;7;1;1;0\nWireConnection;5;0;7;0\nWireConnection;5;1;3;0\nWireConnection;5;2;4;0\nWireConnection;5;3;2;0\nWireConnection;5;4;17;0\nWireConnection;0;0;8;0\nASEEND*/\n//CHKSM=CCF215833918D8A429B246064CDD348A2EAFD5B6"
   m_functionName: 
   m_description: 
   m_additionalIncludes:
