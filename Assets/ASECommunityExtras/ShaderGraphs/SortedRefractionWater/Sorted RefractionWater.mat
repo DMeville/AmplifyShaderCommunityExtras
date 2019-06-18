@@ -28,7 +28,7 @@ Material:
         m_Scale: {x: 0.5, y: 0.5}
         m_Offset: {x: 0, y: 0}
     - _TextureSample0:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4769e995b8ae8f14dbcb4d9eeef57a09, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _texcoord:
@@ -42,24 +42,32 @@ Material:
     - _Float1: 1.24
     - _FogDistance: 10.04
     - _Metallic: 0.73
+    - _NormalScale: 0.01
+    - _ReflectionIntensity: 0.635
+    - _ReflectionNormalScale: 0.19
+    - _RefractionNormalScale: 0.38
+    - _RefractionNormalStrength: 1
     - _Smoothness: 1
-    - _Strength: 0.1
+    - _Strength: 0.07
+    - _SurfaceNormalScale: 0.235
     - _Tess: 0.56
+    - _Tiling: 0.1
     - _TimeScale: 1
-    - _Timescale: 0.45
+    - _Timescale: 0.1
     - __dirty: 0
     - _wspeed: 0.23
     m_Colors:
     - _Color0: {r: 0.3018868, g: 0, b: 0, a: 0}
     - _DeepColor: {r: 0.023673896, g: 0.028955292, b: 0.26415092, a: 0}
     - _DeepWaterTint: {r: 0, g: 0.0377028, b: 1, a: 0}
+    - _ScrollSpeed: {r: 0, g: -1, b: 0.001, a: 0}
     - _ShoreColor: {r: 1, g: 1, b: 1, a: 0}
-    - _TopColor: {r: 0.3254717, g: 0.97955817, b: 1, a: 1}
+    - _TopColor: {r: 0, g: 0.9709301, b: 1, a: 1}
     - _Vector0: {r: 0, g: 0, b: 0, a: 0}
     - _Vector1: {r: 0.02, g: 0, b: 0, a: 0}
     - _Vector2: {r: 1, g: 6.05, b: 1, a: 1}
     - _Vector3: {r: 0, g: 0, b: 0, a: 0}
     - _Vector4: {r: 4.12, g: 0.45, b: 0, a: 0}
-    - _WaterColor: {r: 0.08018869, g: 0.7754999, b: 1, a: 0}
+    - _WaterColor: {r: 0, g: 0.6626052, b: 1, a: 0}
     - _refractedDepth: {r: 0, g: 0, b: 0, a: 0}
     - _w: {r: 1.04, g: 1, b: 0.46, a: 1.07}

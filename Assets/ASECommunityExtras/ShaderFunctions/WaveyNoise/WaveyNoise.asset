@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 78b2425a2284af743826c689403a4924, type: 3}
+  m_Name: WaveyNoise
+  m_EditorClassIdentifier: 
+  m_functionInfo: "// Made with Amplify Shader Editor\n// Available at the Unity Asset
+    Store - http://u3d.as/y3X \n/*ASEBEGIN\nVersion=16700\n741;73;1536;777;1378.153;395.1982;1.3;True;False\nNode;AmplifyShaderEditor.SmoothstepOpNode;53;640,128;Float;True;3;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;49;-174.8,-22.5;Float;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.SimpleAddOpNode;122;14.14824,-215.798;Float;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;121;-858.1522,-326.2977;Float;False;UV;2;0;False;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;60;-1520,48;Float;False;ScrollSpeed;1;1;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;46;-320,-48;Float;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleMultiplyOpNode;37;128,128;Float;False;2;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.NoiseGeneratorNode;43;128,0;Float;False;Simplex2D;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.RangedFloatNode;48;-128,224;Float;False;Constant;_Quarter;Quarter;6;0;Create;True;0;0;False;0;0.25;0;0;0;0;1;FLOAT;0\nNode;AmplifyShaderEditor.NoiseGeneratorNode;50;-128,128;Float;False;Simplex2D;1;0;FLOAT2;0,0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMinOpNode;56;384,256;Float;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleMaxOpNode;57;384,384;Float;False;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;59;128,384;Float;False;SmoothstepMax;1;8;False;1;0;FLOAT;0.6;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;58;128,288;Float;False;SmoothstepMin;1;7;False;1;0;FLOAT;0.3;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleAddOpNode;123;-345.9526,343.2017;Float;False;2;2;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SimpleSubtractOpNode;36;384,16;Float;True;2;0;FLOAT;0;False;1;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;61;-544,-128;Float;False;NoiseATilingX;1;2;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SwizzleNode;118;-976,0;Float;False;FLOAT2;1;0;2;3;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.SwizzleNode;120;-560,128;Float;False;FLOAT2;1;0;2;3;1;0;FLOAT2;0,0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionSwitch;106;914.1998,-5.2;Float;False;SmoothStep;True;1;2;1;In
+    0;In 1;Object;-1;9;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionSwitch;115;-800,32;Float;False;ScrollXAxis;True;1;2;0;In
+    0;In 1;Object;-1;9;0;FLOAT2;0,0;False;1;FLOAT2;0,0;False;2;FLOAT;0;False;3;FLOAT;0;False;4;FLOAT;0;False;5;FLOAT;0;False;6;FLOAT;0;False;7;FLOAT;0;False;8;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.DynamicAppendNode;114;-560,224;Float;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;112;-784,224;Float;False;NoiseBTilingX;1;4;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;113;-784,320;Float;False;NoiseBTilingY;1;5;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SimpleTimeNode;42;-1328,48;Float;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.DynamicAppendNode;45;-1136,48;Float;False;FLOAT2;4;0;FLOAT;0;False;1;FLOAT;0;False;2;FLOAT;0;False;3;FLOAT;0;False;1;FLOAT2;0\nNode;AmplifyShaderEditor.FunctionInput;62;-544,-32;Float;False;NoiseATilingY;1;3;False;1;0;FLOAT;1;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionInput;109;256,-128;Float;False;StepValue;1;6;False;1;0;FLOAT;0.3;False;1;FLOAT;0\nNode;AmplifyShaderEditor.FunctionNode;111;624,-128;Float;True;Step
+    Antialiasing;-1;;1;2a825e80dfb3290468194f83380797bd;0;2;1;FLOAT;0;False;2;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.SaturateNode;110;448,-128;Float;False;1;0;FLOAT;0;False;1;FLOAT;0\nNode;AmplifyShaderEditor.TextureCoordinatesNode;47;-403.5,125.4;Float;False;0;-1;2;3;2;SAMPLER2D;;False;0;FLOAT2;1,1;False;1;FLOAT2;0,0;False;5;FLOAT2;0;FLOAT;1;FLOAT;2;FLOAT;3;FLOAT;4\nNode;AmplifyShaderEditor.FunctionOutput;0;1340.5,-28.6;Float;True;True;Output;0;False;1;0;FLOAT;0;False;1;FLOAT;0\nWireConnection;53;0;36;0\nWireConnection;53;1;56;0\nWireConnection;53;2;57;0\nWireConnection;49;0;46;0\nWireConnection;49;1;115;0\nWireConnection;122;0;121;0\nWireConnection;122;1;49;0\nWireConnection;46;0;61;0\nWireConnection;46;1;62;0\nWireConnection;37;0;50;0\nWireConnection;37;1;48;0\nWireConnection;43;0;122;0\nWireConnection;50;0;123;0\nWireConnection;56;0;58;0\nWireConnection;56;1;59;0\nWireConnection;57;0;58;0\nWireConnection;57;1;59;0\nWireConnection;123;0;121;0\nWireConnection;123;1;47;0\nWireConnection;36;0;43;0\nWireConnection;36;1;37;0\nWireConnection;118;0;45;0\nWireConnection;120;0;115;0\nWireConnection;106;0;111;0\nWireConnection;106;1;53;0\nWireConnection;115;0;118;0\nWireConnection;115;1;45;0\nWireConnection;114;0;112;0\nWireConnection;114;1;113;0\nWireConnection;42;0;60;0\nWireConnection;45;0;42;0\nWireConnection;111;1;110;0\nWireConnection;111;2;36;0\nWireConnection;110;0;109;0\nWireConnection;47;0;114;0\nWireConnection;47;1;120;0\nWireConnection;0;0;106;0\nASEEND*/\n//CHKSM=328A26F9E04BAD709A94DC9926D83D85781A8F0F"
+  m_functionName: 
+  m_description: Pans two different noise textures across two different axes, subtracts
+    the second from the first and steps between the values to provide a flowing effect.
+    Change scrolls speed to negative for opposite direction in same axis or toggle
+    ScrollXAxis to change XY direction. Can toggle between Step and SmoothStep for
+    hard or soft edges.
+  m_additionalIncludes:
+    m_additionalIncludes: []
+    m_outsideIncludes: []
+  m_additionalPragmas:
+    m_additionalPragmas: []
+    m_outsidePragmas: []
+  m_additionalDirectives:
+    m_validData: 0
+    m_isDirty: 0
+    m_moduleName: ' Additional Directives'
+    m_independentModule: 1
+    m_additionalDirectives: []
+    m_shaderFunctionDirectives: []
+    m_nativeDirectives: []
+    m_nativeDirectivesFoldout: 0
+    m_directivesSaveItems: []
+  m_nodeCategory: 9
+  m_customNodeCategory: 
+  m_previewPosition: 0
+  m_hidden: 0

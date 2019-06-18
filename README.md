@@ -28,8 +28,9 @@ Includes Shader Function: RotateCubemap2D
 -------
 
 ### [Sorted Refraction Water (https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/SortedRefractionWater) - by [DMeville](https://twitter.com/dmeville)
+No more ghosting refractions around objects above the water surface. Also includes planar reflections on the surface!
 ![img](https://i.imgur.com/wTMXILS.gif)
-Sorted Refractions means geo above the surface is masked out and does not get refracted. No more ghosting around objects above the surface!
+![img](https://i.imgur.com/8npXqb0.gif)
 
 -------
 
@@ -38,6 +39,12 @@ Sorted Refractions means geo above the surface is masked out and does not get re
 
 # Shader Functions
 -------
+
+
+
+### Wavey Noise](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/WaveyNoise) - by [Andrew Mendlik](https://twitter.com/andrew_mendlik)
+![img](https://i.imgur.com/VgwRIIm.gif)
+------
 
 ### [Voronoi Noise](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/VoronoiNoise) - by [DMeville](https://twitter.com/dmeville)
 ![img](https://i.imgur.com/bnmhDWn.png)
