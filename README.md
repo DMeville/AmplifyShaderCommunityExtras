@@ -7,6 +7,8 @@ A bunch of additional things for [Amplify Shader Editor](https://assetstore.unit
 
 Tested in Unity 2019.1.0f2 and ASE v1.6.7. Make sure you already have ASE installed in your project otherwise you will probably get materials with missing textures!
 
+MIT License, do whatever you want.
+
 ## WHY
 Having extra examples and resources scattered among the different discord channels and the forums makes it hard to find what you're looking for sometimes, so having it all in one nice (searchable) place seems handy.
 
