@@ -36,9 +36,13 @@ No more ghosting refractions around objects above the water surface. Also includ
 ### [Snow Sparkles](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/SnowSparkles) - by [DMeville](https://twitter.com/dmeville)
 ![Snow Sparkles](https://i.imgur.com/l0WXSuj.gif)
 
-# Shader Functions
 -------
 
+### [DM Toon](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderGraphs/DMToon) - by [DMeville](https://twitter.com/dmeville)
+![DMToon](https://i.imgur.com/36cLDj3.gif)
+
+# Shader Functions
+-------
 
 
 ### [Wavey Noise](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/ShaderFunctions/WaveyNoise) - by [Andrew Mendlik](https://twitter.com/andrew_mendlik)
