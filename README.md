@@ -108,7 +108,7 @@ No more ghosting refractions around objects above the water surface. Also includ
 ![Note Node](https://i.imgur.com/CanEU7S.png)
 
 # Misc Tools
-### [Material To Texture Baker](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/AmplifyShaderEditor/Plugins/Editor/Nodes/CommunityNodes/NoteNode) - by [totallyRonja](https://twitter.com/totallyRonja)
+### [Material To Texture Baker](https://github.com/DMeville/AmplifyShaderCommunityExtras/tree/master/Assets/ASECommunityExtras/MiscTools/MaterialToTextureBaker) - by [totallyRonja](https://twitter.com/totallyRonja)
 From the tutorial here: http://www.ronja-tutorials.com/2018/10/13/baking_shaders.html
 Very useful to bake noise shaders to textures. Or combine masks into RGBA channels. Or anything else you can think of!
 ![Img](https://i.imgur.com/eey42pl.png)
